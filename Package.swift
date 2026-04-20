@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Katafract",
+    name: "KatafractStyle",
     platforms: [
         .iOS(.v17),
         .macOS(.v14),
