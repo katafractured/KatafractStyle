@@ -1,0 +1,33 @@
+{
+  "": {
+    "swift-dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/primary.swiftdeps"
+  },
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/Color+Palette.swift": {
+    "dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Color+Palette.d",
+    "object": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Color+Palette.swift.o",
+    "swiftmodule": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Color+Palette~partial.swiftmodule",
+    "swift-dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Color+Palette.swiftdeps",
+    "diagnostics": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Color+Palette.dia"
+  },
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/Haptics.swift": {
+    "dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Haptics.d",
+    "object": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Haptics.swift.o",
+    "swiftmodule": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Haptics~partial.swiftmodule",
+    "swift-dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Haptics.swiftdeps",
+    "diagnostics": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Haptics.dia"
+  },
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/KatafractStyle.swift": {
+    "dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/KatafractStyle.d",
+    "object": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/KatafractStyle.swift.o",
+    "swiftmodule": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/KatafractStyle~partial.swiftmodule",
+    "swift-dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/KatafractStyle.swiftdeps",
+    "diagnostics": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/KatafractStyle.dia"
+  },
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/Typography.swift": {
+    "dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Typography.d",
+    "object": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Typography.swift.o",
+    "swiftmodule": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Typography~partial.swiftmodule",
+    "swift-dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Typography.swiftdeps",
+    "diagnostics": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Typography.dia"
+  }
+}

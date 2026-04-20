@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "KatafractPackageTests-arm64-apple-macosx-debug.module": ["<KatafractPackageTests-arm64-apple-macosx-debug.module>"]
+  "KatafractPackageTests-arm64-apple-macosx-debug.test": ["<KatafractPackageTests-arm64-apple-macosx-debug.test>"]
+  "KatafractStyle-arm64-apple-macosx-debug.module": ["<KatafractStyle-arm64-apple-macosx-debug.module>"]
+  "KatafractStyleTests-arm64-apple-macosx-debug.module": ["<KatafractStyleTests-arm64-apple-macosx-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<KatafractStyle-arm64-apple-macosx-debug.module>"]
+  "test": ["<KatafractPackageTests-arm64-apple-macosx-debug.test>","<KatafractStyle-arm64-apple-macosx-debug.module>","<KatafractStyleTests-arm64-apple-macosx-debug.module>"]
+default: "main"
+nodes:
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/Tests/KatafractStyleTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.derived/runner.swift"]
+    outputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/sources"
+
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.derived/runner.swift"]
+
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/runner.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Color+Palette.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Haptics.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/KatafractStyle.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Typography.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/PaletteTests.swift.o"]
+    outputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.product/Objects.LinkFileList"
+
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/Color+Palette.swift","/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/Haptics.swift","/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/KatafractStyle.swift","/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/Typography.swift"]
+    outputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/sources"]
+    description: "Write auxiliary file /Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/sources"
+
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/christianflores/Documents/GitHub/KatafractStyle/Tests/KatafractStyleTests/PaletteTests.swift"]
+    outputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/sources"]
+    description: "Write auxiliary file /Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/sources"
+
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<KatafractPackageTests-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/runner.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractPackageTests.swiftmodule"]
+    outputs: ["<KatafractPackageTests-arm64-apple-macosx-debug.module>"]
+
+  "<KatafractPackageTests-arm64-apple-macosx-debug.test>":
+    tool: phony
+    inputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.xctest/Contents/MacOS/KatafractPackageTests"]
+    outputs: ["<KatafractPackageTests-arm64-apple-macosx-debug.test>"]
+
+  "<KatafractStyle-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Color+Palette.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Haptics.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/KatafractStyle.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Typography.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractStyle.swiftmodule"]
+    outputs: ["<KatafractStyle-arm64-apple-macosx-debug.module>"]
+
+  "<KatafractStyleTests-arm64-apple-macosx-debug.module>":
+    tool: phony
+    inputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/PaletteTests.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractStyleTests.swiftmodule"]
+    outputs: ["<KatafractStyleTests-arm64-apple-macosx-debug.module>"]
+
+  "C.KatafractPackageTests-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.derived/runner.swift","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractStyleTests.swiftmodule","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/sources"]
+    outputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/runner.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'KatafractPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","KatafractPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractPackageTests.swiftmodule","-output-file-map","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/sources","-I","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/include/KatafractPackageTests-Swift.h","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","katafractstyle"]
+
+  "C.KatafractPackageTests-arm64-apple-macosx-debug.test":
+    tool: shell
+    inputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/runner.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Color+Palette.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Haptics.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/KatafractStyle.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Typography.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/PaletteTests.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.xctest/Contents/MacOS/KatafractPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/KatafractPackageTests.xctest/Contents/MacOS/KatafractPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug","-o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.xctest/Contents/MacOS/KatafractPackageTests","-module-name","KatafractPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractStyle.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractStyleTests.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.KatafractStyle-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/Color+Palette.swift","/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/Haptics.swift","/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/KatafractStyle.swift","/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/Typography.swift","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/sources"]
+    outputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Color+Palette.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Haptics.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/KatafractStyle.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/Typography.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractStyle.swiftmodule"]
+    description: "Compiling Swift Module 'KatafractStyle' (4 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","KatafractStyle","-emit-dependencies","-emit-module","-emit-module-path","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractStyle.swiftmodule","-output-file-map","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/sources","-I","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyle.build/include/KatafractStyle-Swift.h","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","katafractstyle"]
+
+  "C.KatafractStyleTests-arm64-apple-macosx-debug.module":
+    tool: shell
+    inputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/Tests/KatafractStyleTests/PaletteTests.swift","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractStyle.swiftmodule","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/sources"]
+    outputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/PaletteTests.swift.o","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractStyleTests.swiftmodule"]
+    description: "Compiling Swift Module 'KatafractStyleTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","KatafractStyleTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules/KatafractStyleTests.swiftmodule","-output-file-map","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/sources","-I","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","katafractstyle"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/christianflores/Documents/GitHub/KatafractStyle/Sources/KatafractStyle/","/Users/christianflores/Documents/GitHub/KatafractStyle/Tests/KatafractStyleTests/","/Users/christianflores/Documents/GitHub/KatafractStyle/Package.swift","/Users/christianflores/Documents/GitHub/KatafractStyle/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

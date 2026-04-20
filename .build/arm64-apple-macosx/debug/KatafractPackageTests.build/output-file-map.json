@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/primary.swiftdeps"
+  },
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/runner.d",
+    "object": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractPackageTests.build/runner.dia"
+  }
+}

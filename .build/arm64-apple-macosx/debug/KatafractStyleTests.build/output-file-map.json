@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/primary.swiftdeps"
+  },
+  "/Users/christianflores/Documents/GitHub/KatafractStyle/Tests/KatafractStyleTests/PaletteTests.swift": {
+    "dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/PaletteTests.d",
+    "object": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/PaletteTests.swift.o",
+    "swiftmodule": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/PaletteTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/PaletteTests.swiftdeps",
+    "diagnostics": "/Users/christianflores/Documents/GitHub/KatafractStyle/.build/arm64-apple-macosx/debug/KatafractStyleTests.build/PaletteTests.dia"
+  }
+}
